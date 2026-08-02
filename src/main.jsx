@@ -24,7 +24,7 @@ const queryClient = new QueryClient({
 });
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <BrowserRoutes>
+  <BrowserRouter>
     <WagmiProvider config={config}>
       <QueryClientProvider client={queryClient}>
         <RainbowKitProvider theme={darkTheme({
